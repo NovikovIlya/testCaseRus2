@@ -12,19 +12,23 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
-.flex{
-  gap:70px;
+.flex {
+  gap: 70px;
   align-items: center;
 }
 .container {
   width: 90%;
 }
-.btn{
-  background-color: #9E0B37;
+.container__bottom {
+  margin-bottom: 60px;
+}
+.btn {
+  background-color: #9e0b37;
   border-radius: 10px;
   padding: 10px;
-  color:white;
-  border:none;
+  color: white;
+  border: none;
+  box-shadow: 6px 6px 21px white inset;
 }
 .main__head {
   width: 100%;
@@ -121,7 +125,7 @@ ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: 0px 0px;
+  gap: 20px;
   grid-auto-flow: row;
   grid-template-areas: "a a a a a b";
 }
@@ -135,6 +139,7 @@ ul {
 }
 
 .textBg {
+  margin-bottom: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -197,12 +202,34 @@ ul {
 .image__logo {
   width: 60px;
 }
-
+.image__logo__premiere {
+  width: 70px;
+}
+.mb {
+  margin-bottom: 15px;
+}
+.mb2 {
+  margin-bottom: 40px;
+}
+.mb3 {
+  margin-bottom: 60px !important;
+}
+.btn {
+  font-size: 16px;
+}
+.nav:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+.btn:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
 .textRight {
   font-size: 13px;
   grid-column: -2/3;
   color: white;
-  text-align: right;
+  text-align: center;
 }
 
 .textBasic {
@@ -221,38 +248,37 @@ ul {
   margin-bottom: 20px;
 }
 
-.miniImage{
+.miniImage {
   width: 100%;
 }
-.draw__container{
+.draw__container {
   position: relative;
+  margin-bottom: 10px;
 }
-.draw{
-  border:1px white solid;
+.draw {
+  border: 1px white solid;
   border-radius: 20px;
   display: grid;
   grid-template-columns: 1fr 56px;
   align-items: center;
   position: absolute;
-  bottom:0px;
-  margin:10px;
+  bottom: 0px;
+  margin: 10px;
   backdrop-filter: blur(10px);
   padding: 5px;
-
-
 }
-.textDraw{
-  color:white;
+.textDraw {
+  color: white;
   text-align: center;
-  font-size: 13px;
-
+  font-size: 10px;
 }
 
-
-
-
+.textBottom {
+  grid-column: 1/7;
+}
 
 .scroll {
+  margin-bottom: 20px;
   background-color: #171422;
   position: relative;
   display: flex;
@@ -323,4 +349,49 @@ ul {
 .imgBox img {
   max-width: 100px;
   scale: 0.8;
+}
+
+.z {
+  width: 400px;
+  margin: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .imageLarge{
+    display: none;
+  }
+  .mask{
+    width: 100%;
+  }
+  .miniGrid__logo{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .textGrid{
+    grid-column: 1/2;
+  }
+  .flex{
+  
+    font-size: 6px;
+  }
+  .btn{
+    font-size: 6px;
+  }
+  .container__grid{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .left{
+    width: 100%;
+  }
+  .container__coral{
+    flex-wrap: wrap;
+  }
+  .draw{
+    left:8%;
+  }
+  .textBg{
+    font-size: 15px;
+  }
 }
